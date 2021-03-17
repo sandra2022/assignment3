@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,226 +8,128 @@
 </head>
 <body>
     <style>
-             body {
+        
+body {
   background-color: lightblue;
 }
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
 
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        .bg-img {
+          /* The image used */
+          background-image: url("ma3.jpg");
+        
+          height: 500px;
+          
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          
+          /* Needed to position the navbar */
+          position: relative;
+        }
+        
+        /* Position the navbar container inside the image */
+        .container {
+          position: absolute;
+          margin: 20px;
+          width: auto;
+        }
+        
+        /* The navbar */
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        /* Navbar links */
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
 
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-.centered {
+        </style>
+        </head>
+        <body>
+        
+        <h2>Travelogue</h2>
+        <div class="bg-img">
+          <div class="container">
+            
+            <div class="topnav">
+              <a href="tripplanner.html">Trip Planner</a>
+              
+              <a href="contactus.html">Contact Us</a>
+              <a href="aboutus.html">About Us</a>
+             
+            </div>
+          </div>
+        </div>
+        <style>
+            .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-</style>
-</head>
-<body>
-<h2>Inspiration to see the planet</h2>
-<div class="container">
-  <img src="tp.jpg" alt="Snow" style="width:100%;">
-  <div class="top-left">Create a fully customized
-    day by day itinerary for free</div> 
-  <div class="centered"><h1>
-    The new way to plan your next trip</h1></div>
-</div>
-<h1><b><i>Trip planner benefits</i></b></h1>
-<ul>
-    <ol>
-        Research bot that works for you
-    </ol>
-    <ol>Planning engine
-        that helps you
-        see & do more</ol>
-        <ol>Your complete trip in one place</ol>
-</ul>
-<style>
-    * {box-sizing: border-box}
-    body {font-family: Verdana, sans-serif; margin:0}
-    .mySlides {display: none}
-    img {vertical-align: middle;}
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
-    
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-    
-    /* Caption text */
-    .text {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
-    }
-    
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    
-    /* The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
-    
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-    
-    @-webkit-keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
-    }
-    
-    @keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
-    }
-    
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-      .prev, .next,.text {font-size: 11px}
-    }
-    </style>
-    </head>
-    <body>
-    
-    <div class="slideshow-container">
-    
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="s1.jfif" style="width:90%">
-     
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="s2.jfif" style="width:90%">
-     
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="s3.jfif" style="width:90%">
-     
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    
-    <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-    
+        </style>
+        <div class="container"></div>
+        <div class="centered"><h1><b><i>DON'T TRAVEL FOR CHECK-INS OR PICS
+            TRAVEL WITHOUT ANY REASON OR ALONE 
+            DO LET ME KNOW WHENEVER YOU RETURN...
+        </i></b></h1></div>
+        <h3><b>Why travel around the world?</b></h3>
+        <p><i>We believe that traveling around the world shouldn’t be hard: it’s actually something everyone should be able to do at least once in their lives. Whether you choose to spend a few years or just a couple months traveling this beautiful planet, it’s important to see what’s out there. It’s up to you to make the dream come true and take the first step. Launch TripPlanner to piece together and price your ideal route. Not sure where to start?  You can always call one of our travel consultants and get some complimentary advice!</i></p>
+        <style>
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Traveling is easier than you think.</h2>
+            
+            <img src="wt.jfif"  style="width:50%;">
+            <p>If you’re open and willing, travel will make you an incredibly more well-rounded human being. And that’s really the goal, isn’t it? If you don’t know where to start, check out our Around the World planning guide..</p>
+            <h2>. Traveling helps you learn who you are..</h2>
+            <img src="t1.jfif"  style="width:50%;">
+            <p>All the challenges and opportunities travel lays at your feet help you discover who you are in a way that’s only possible on the road</p>
+             <h2> Travel creates meaningful relationships</h2>
+            
+             <img src="t2.jfif"  style="width:40%;">
+             <p>People you meet while on the road become some of the most valued names on your contact list. They become places on the map to visit later on. These folks give you a glimpse outside your hometown circle of friends, and force you to take in new and refreshing perspectives, and ultimately realize that everyone is the same.</p>
+             <style> 
+                #example1 {
+                  background-image: url(t3.jfif), url(paper.gif);
+                  background-position: left bottom, left top;
+                  background-repeat: no-repeat, repeat;
+                  padding: 15px;
+                }
+                </style>
+                </head>
+                <body>
+                
+              
+                <div id="example1">
+                  <h1>Traveling develops skills you didn’t know you had</h1>
+                   <p style="color:darkorange">Sometimes it’s only far from home that you realize you you’ve got skills you’ve never used. It’s travel that brings them to the surface and makes you smile, satisfied to have reached the mountain top, or  crossed a gorge  or helped a villager clean up after a storm, or even to have successfully ordered a meal at a rural Chinese restaurant.</p>
+                   <p style="color:darkorange"> There’s something satisfying about being able to throw around a few words of Greek, knowing how to say thanks in Thai, pulling out that long dormant Spanish to book a room in Santiago, or simply hearing a language you didn’t know existed just a few weeks before.</p>
+                </div>
    
+        </body>
+</html>
